@@ -1,0 +1,59 @@
+<?php $this->headScript()->appendFile('/js/datepicker.js'); ?>
+
+<?php
+$title = 'New Leave Application';
+$this->headTitle($title);
+?>
+<h1><?php echo $this->escapeHtml($title); ?>  </h1>
+<div >
+
+</div>
+<br/>
+<table class="table">
+    <tr>
+
+        <th colspan="2"><b>Apply Leave</b></th>
+
+
+    </tr>
+    <tr>
+        <td>Leave Type</td>
+        <td>
+            <select name="l_type" >
+                <option value="">-Select Leave Type-</option>
+                <option value="sick" >Sick Leave</option>
+                <option value="casual">Casual Leave</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            From Date
+        </td>
+        <td>
+            <input class="input-sm" type="text" name="lesson-from" readonly="true" >
+        </td>
+    </tr>
+    <tr>
+        <td>
+            To Date
+        </td>
+
+        <td>
+            <input class="input-sm" type="text" name="lesson-to" readonly="true">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Comment
+        </td>
+        <td>
+            <textarea name="comment" ></textarea>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" > <input class="btn btn-info pull-right btn-xs" type="submit" name="submit" value="submit"></td>
+
+    </tr>
+
+</table>
